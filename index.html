@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management - Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">📚 Library</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="be-member.html" class="be-member-link">Become a Member</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Featured Books Section -->
+    <section class="featured-books-lis">
+      <h2>Featured Books</h2>
+      <div class="lis-carousel-wrapper">
+        <button class="lis-carousel-btn left" id="lis-carousel-left" aria-label="Previous">&#8592;</button>
+        <div class="lis-carousel-track" id="lis-carousel-track"></div>
+        <button class="lis-carousel-btn right" id="lis-carousel-right" aria-label="Next">&#8594;</button>
+      </div>
+    </section>
+    <!-- About the Library Section -->
+    <section class="about-library">
+      <h2>About the Library</h2>
+      <p>Our library is dedicated to fostering a love of reading, learning, and discovery. Our mission is to provide access to knowledge, support lifelong learning, and empower our community through inclusive and innovative library services.</p>
+    </section>
+    <!-- Newly Arrived Section -->
+    <section class="newly-arrived">
+      <h2>Newly Arrived</h2>
+      <div class="newly-arrived-list" id="newly-arrived-list"></div>
+    </section>
+    <!-- Membership Promotion Section -->
+    <section class="membership-promo">
+      <div class="membership-card">
+        <h2>Join Our Library Community!</h2>
+        <p>Enjoy exclusive access to resources, events, and more. Become a member today and start your journey of discovery.</p>
+        <a href="be-member.html" class="become-member-btn">Become a Member</a>
+      </div>
+    </section>
+  </main>
+  <!-- AI Chatbot Widget -->
+  <div id="chatbot-widget">
+    <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Open chat">💬</button>
+    <div id="chatbot-box" class="chatbot-box">
+      <div class="chatbot-header">
+        <span>Library AI Assistant</span>
+        <button id="chatbot-minimize" class="chatbot-minimize" aria-label="Minimize chat">–</button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="chatbot-message bot">How can I help you?</div>
+        <div class="chatbot-suggestions">
+          <button class="chatbot-suggestion">See Membership Information</button>
+          <button class="chatbot-suggestion">Borrow Information</button>
+          <button class="chatbot-suggestion">Fine Information</button>
+          <button class="chatbot-suggestion">Newly Arrived Documents</button>
+        </div>
+      </div>
+      <form class="chatbot-input-area" id="chatbot-form">
+        <input type="text" id="chatbot-input" placeholder="Type your message..." autocomplete="off">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html> 
